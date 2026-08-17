@@ -54,6 +54,7 @@
         /* ---主体设置 --- */
         body {
             font-family: Arial, sans-serif;
+            color: #4b5563;
             font-size: 18px;
             /* 14px（偏小）、18px（偏大） */
             margin: 20px;
@@ -61,10 +62,18 @@
             /* 护眼淡黄背景 */
         }
 
+        /* --- 深色模式 --- */
+        body.dark {
+            background-color: #202a44;
+            /* 深色模式背景 */
+            color: #cbd5e1;
+            /* 深色模式文字颜色 */
+        }
+
         /* --- 标题行内排版（左对齐 + 单行并排） --- */
         h1 {
             /* "within a page!"设置 */
-            color: #333;
+            color: #1f2937;
             font-size: 36px;
             display: flex;
             align-items: baseline;
@@ -76,14 +85,63 @@
             margin-bottom: 20px;
         }
 
+        /* --- 按钮样式 --- */
+        #theme-btn {
+            background: none;
+            border: none;
+
+            color: #2563eb;
+
+            cursor: pointer;
+
+            padding: 0;
+
+            position:relative;
+        }
+
+        #theme-btn:hover {
+            color: #93c5fd;
+            text-decoration:underline;
+        }
+
+        body.dark #theme-btn {
+            color: #60a5fa;
+        }
+
+        body.dark #theme-btn:hover {
+            color: #93c5fd;
+            text-decoration:underline;
+        }
+
         /* ---其他标题 --- */
         h2,
         h3 {
-            color: #333;
+            color: #374151;
         }
 
+        /* 深色模式标题 */
+        body.dark h1 {
+            color: #f9fafb;
+        }
+        body.dark h2,
+        body.dark h3 {
+            color: #e5e7fb;
+        }
+        body.dark .gameswift-logo .part-game {
+            color: #f1f5f9;
+        }
+
+        /* --- 浅色模式超链接 --- */
         a {
             text-decoration: underline;
+        }
+
+        /* --- 深色模式超链接 --- */
+        body.dark a {
+            color: #93c5fd;
+        }
+        body.dark a:visited {
+            color: #60a5fa;
         }
 
         /* --- 商标 Logo 样式 --- */
@@ -144,6 +202,12 @@
         </span>
         <span><em>within a page!</em></span>
     </h1>
+
+    <!-- 深色模式按钮 -->
+    <button id="theme-btn" style="font-size: 20px">
+        <strong><em>🌙 Dark Mode</em></strong>
+    </button><br />
+    <br />
 
     <!-- 弔图，注意：自适应 -->
     <img src="GameSwift_images/侍坐_副本.jpg" title="吾与点也！！！" width="100%" />
@@ -212,7 +276,7 @@
     <!-- 说明栏 -->
     <h3 id="further">Furthermore</h3>
     <p>I'm committed to constantly improving my work in order to realize a more humanized developing concept. So, I'll
-        be using CSS 3 to polish the design and improve readability of this site, while adding more interactive features
+        be using CSS 3 and JavaScript to polish the design and improve readability of this site, while adding more interactive features
         to enhance your experience.</p>
 
     <p>In the future, I plan to expand this site with more games, tutorials, and insights into game development. Stay
@@ -268,3 +332,5 @@
 </body>
 
 </html>
+
+<script src="script.js"></script>
