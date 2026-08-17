@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+江南有孤士，少而负志，常临溪上，望云山万里，谓人生尚长，来日无央。
+
+尝于暮春，与故友相逢于古桥之侧。
+时花影落水，晚风过袖。
+
+友曰：
+“他年秋深，当复携酒来此。”
+
+士笑而诺之。
+
+然浮世如潮，去来无定。
+少年离乡，逐名逐利，涉远道，历寒暑。
+及回首时，已不知岁月几更，旧约几时。
+
+十年后，复过其桥。
+
+桥不改，水犹流，惟当年人影，不复见矣。
+
+问于桥旁老者，老者曰：
+“昔有一人，亦常于此望远。后来春去秋来，未闻其归。”
+
+士默然。
+
+是夜，月落江寒，孤灯照影。
+士取酒一盏，置于桥上，向空席而酌。
+
+良久，低吟曰：
+
+“世间最远者，非山河万里，
+乃昨日之人与今日之我。”
+
+饮尽而去。
+
+翌日，桥上唯余空盏一枚。
+流水无言，载落花东去。
+
+后世过桥者，偶见石上残痕：
+“曾有旧约，未赴。”
+
+代码有终，故事未必有终......
+-->
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 移动端理想视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- 引入 Montserrat 粗斜体字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
     <title>GameSwift</title>
     <style>
+        /* ---主体设置 --- */
         body {
             font-family: Arial, sans-serif;
             font-size: 18px;
@@ -19,8 +63,9 @@
 
         /* --- 标题行内排版（左对齐 + 单行并排） --- */
         h1 {
+            /* "within a page!"设置 */
             color: #333;
-            font-size: 45px;
+            font-size: 36px;
             display: flex;
             align-items: baseline;
             /* 底部基线对齐 */
@@ -31,6 +76,7 @@
             margin-bottom: 20px;
         }
 
+        /* ---其他标题 --- */
         h2,
         h3 {
             color: #333;
@@ -53,12 +99,14 @@
             user-select: none;
         }
 
+        /* --- H1标题字号 --- */
         .font-size-1 {
-            font-size: 60px;
+            font-size: 54px;
         }
 
+        /* --- H2标题字号 --- */
         .font-size-2 {
-            font-size: 30px;
+            font-size: 27px;
         }
 
         /* 前半部分：深酷灰/近黑色 */
@@ -75,12 +123,12 @@
 
         /* 右上角小角标 ™ */
         .gameswift-logo .trademark {
-            font-size: 30px;
+            font-size: 26px;
             font-style: normal;
             font-weight: 700;
             color: #6b7280;
             margin-left: 2px;
-            transform: translateY(-25px);
+            transform: translateY(-24px);
         }
     </style>
 </head>
@@ -97,23 +145,28 @@
         <span><em>within a page!</em></span>
     </h1>
 
-    <img src="GameSwift_images/侍坐_副本.jpg" title="吾与点也！！！" width="600" />
+    <!-- 弔图，注意：自适应 -->
+    <img src="GameSwift_images/侍坐_副本.jpg" title="吾与点也！！！" width="100%" />
     <h6><em>Image sourced from the internet, if copyrighted, please <a href="#contact">contact me</a> for removal.</em>
     </h6>
     <br />
 
     <h2>CATALOG</h2>
 
+    <!-- 总锚点链接 -->
     1. <a href="#intro"><em>A Brief Introduction</em></a><br />
     2. <a href="#games"><em>Game(s) Showcase</em></a><br />
     3. <a href="#further"><em>Furthermore</em></a><br />
     4. <a href="#st&d"><em>Statements, Terms of Use & Disclaimer</em></a><br />
     <br />
 
+    <!-- 简介栏 -->
     <h3 id="intro">A Brief Introduction</h3>
+    <!-- 引用一次LOGO -->
     <p>Welcome to <span class="gameswift-logo font-size-2">
             <span class="part-game">Game</span><span class="part-swift">Swift</span>
-            <span class="trademark" style="transform: translateY(-10px); font-size: 20px">™</span>
+            <!-- 角标 ™字号 -->
+            <span class="trademark" style="transform: translateY(-12px); font-size: 13px">™</span>
         </span> !</p>
 
     <p>I'm a university student from ShenZhen, also an independent game developer passionate about game design,
@@ -129,6 +182,7 @@
     </p>
     <br />
 
+    <!-- 展示栏 -->
     <h3 id="games">Game(s) Showcase</h3>
 
     <p>Currently, I have developed a prototype <strong><em>Text-based RPG</em></strong>, which is available for download
@@ -155,6 +209,7 @@
         PLEASE CONSIDER CAREFULLY!!!</strong></p>
     <br />
 
+    <!-- 说明栏 -->
     <h3 id="further">Furthermore</h3>
     <p>I'm committed to constantly improving my work in order to realize a more humanized developing concept. So, I'll
         be using CSS 3 to polish the design and improve readability of this site, while adding more interactive features
@@ -171,6 +226,7 @@
         interests.</p>
     <br />
 
+    <!-- 条款栏 -->
     <h3 id="st&d">Statements, Terms of Use & Disclaimer</h3>
 
     <p><em><ins>1. Copyright & Ownership</ins></em></p>
