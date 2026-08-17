@@ -85,6 +85,16 @@
             margin-bottom: 20px;
         }
 
+        /* --- 按钮右对齐 --- */
+        .header {
+            display:flex;
+            flex-direction:column;
+        }
+
+        #theme-btn {
+            align-self:flex-end;
+        }
+
         /* --- 按钮样式 --- */
         #theme-btn {
             background: none;
@@ -193,6 +203,7 @@
 
 <body>
 
+    <div class="header">
     <!-- 靠左一行内排版的 H1 标题 -->
     <h1>
         <span class="gameswift-logo font-size-1">
@@ -204,9 +215,10 @@
     </h1>
 
     <!-- 深色模式按钮 -->
-    <button id="theme-btn" style="font-size: 20px">
+    <button id="theme-btn" style="font-size: 24px">
         <strong><em>🌙 Dark Mode</em></strong>
-    </button><br />
+    </button>
+    </div>
     <br />
 
     <!-- 弔图，注意：自适应 -->
