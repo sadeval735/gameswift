@@ -60,6 +60,8 @@
             margin: 20px;
             background-color: #faf0d7;
             /* 护眼淡黄背景 */
+            max-width: 800px;
+            margin: auto;
         }
 
         /* --- 深色模式 --- */
@@ -137,7 +139,7 @@
             color: #374151;
         }
 
-        /* 深色模式标题 */
+        /* 深色模式标题 + LOGO */
         body.dark h1 {
             color: #f9fafb;
         }
@@ -147,6 +149,17 @@
         }
         body.dark .gameswift-logo .part-game {
             color: #f1f5f9;
+            text-shadow: 3px 3px 0 rgb(100, 100, 110);
+        }
+        body.dark .font-size-2 .part-game-s {
+            color: #f1f5f9;
+            text-shadow: 1.5px 1.5px 0 rgb(100, 100, 110);
+        }
+        body.dark .font-size-1 .part-swift {
+            text-shadow: 3px 3px 0 rgb(244, 63, 94,0.40);
+        }
+        body.dark .font-size-2 .part-swift-s {
+            text-shadow: 1.5px 1.5px 0 rgb(244, 63, 94,0.40);
         }
 
         /* --- 浅色模式超链接 --- */
@@ -175,26 +188,34 @@
             user-select: none;
         }
 
-        /* --- H1标题字号 --- */
+        /* --- 大LOGO标题字号 --- */
         .font-size-1 {
             font-size: 54px;
         }
 
-        /* --- H2标题字号 --- */
-        .font-size-2 {
+        /* --- 小LOGO标题字号 --- */
+        .font-size-2 .part-game-s {
             font-size: 27px;
+            color: #111827;
+            text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .font-size-2 .part-swift-s {
+            font-size: 27px;
+            color: #e11d48;;
+            text-shadow: 1.5px 1.5px 0px rgba(225, 29, 72, 0.18);
         }
 
         /* 前半部分：深酷灰/近黑色 */
         .gameswift-logo .part-game {
             color: #111827;
-            text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.12);
+            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.12);
         }
 
         /* 后半部分：高饱和度冲刺红 */
         .gameswift-logo .part-swift {
             color: #e11d48;
-            text-shadow: 1.5px 1.5px 0px rgba(225, 29, 72, 0.18);
+            text-shadow: 3px 3px 0px rgba(225, 29, 72, 0.18);
         }
 
         /* 右上角小角标 ™ */
@@ -212,11 +233,11 @@
 <body>
 
     <div class="header">
-    <!-- 靠左一行内排版的 H1 标题 -->
+    <!-- 靠左一行内排版的 H1 标题 + LOGO -->
     <h1>
         <span class="gameswift-logo font-size-1">
-            <span class="part-game" style="text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.12)">Game</span>
-            <span class="part-swift" style="text-shadow: 3px 3px 0px rgba(225, 29, 72, 0.18)">Swift</span>
+            <span class="part-game">Game</span>
+            <span class="part-swift">Swift</span>
             <span class="trademark">™</span>
         </span>
         <span><em>within a page!</em></span>
@@ -247,8 +268,9 @@
     <!-- 简介栏 -->
     <h3 id="intro">A Brief Introduction</h3>
     <!-- 引用一次LOGO -->
-    <p>Welcome to <span class="gameswift-logo font-size-2">
-            <span class="part-game">Game</span><span class="part-swift">Swift</span>
+    <p>Welcome to <span class="gameswift-logo font-size-2"> 
+            <span class="part-game-s">Game</span>
+            <span class="part-swift-s">Swift</span>
             <!-- 角标 ™字号 -->
             <span class="trademark" style="transform: translateY(-12px); font-size: 13px">™</span>
         </span> !</p>
@@ -260,8 +282,8 @@
     <p>Whether you're a player, a fellow developer, or just curious about game creation, I hope you find something
         interesting here. Feel free to reach out if you have feedback, bug reports, or simply want to connect!</p>
 
-    <p id="contact"><strong><ins>Contact:</ins><br />
-        NickStevens@126.com</strong><br />
+    <p id="contact"><strong><ins>Contact:</ins></strong><br />
+        <strong>NickStevens@126.com</strong><br />
         <strong>(The GitHub page's link will be added on another day)</strong>
     </p>
     <br />
